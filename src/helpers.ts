@@ -1,5 +1,5 @@
 import type { SurrealSession, SurrealUser } from "./types.ts";
-import type { DatabaseUser as LuciaDatabaseUser, DatabaseSession as LuciaDatabaseSession } from "lucia";
+import type { DatabaseUser as LuciaDatabaseUser, DatabaseSession as LuciaDatabaseSession } from "npm:lucia";
 
 /**
  * Maps a SurrealSession object to a Lucia's DatabaseSession object.

@@ -1,5 +1,5 @@
-import type { RegisteredDatabaseSessionAttributes, RegisteredDatabaseUserAttributes } from "lucia";
-import type { RecordId } from "surrealdb.js";
+import type { RegisteredDatabaseSessionAttributes, RegisteredDatabaseUserAttributes } from "npm:lucia";
+import type { RecordId } from "npm:surrealdb.js";
 
 /**
  * Maps a SurrealDB tables uses for storing sessions and users to the adapter.
