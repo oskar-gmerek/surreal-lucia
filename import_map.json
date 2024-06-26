@@ -1,0 +1,5 @@
+{
+    "imports": {
+      "surrealdb.js": "https://deno.land/x/surrealdb@v1.0.0-beta.9/mod.ts"
+    }
+  }
