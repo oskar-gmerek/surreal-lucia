@@ -1,12 +1,5 @@
 {
     "name": "@oskargmerek/surreal-lucia",
     "version": "0.1.0",
-    "exports": "./src/index.ts",
-    "publish": {
-        "include":[
-            "LICENSE",
-            "README.md",
-            ".env.example"
-        ]
-    }
+    "exports": "./src/index.ts"
 }
