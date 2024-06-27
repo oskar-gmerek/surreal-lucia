@@ -72,6 +72,7 @@ export const lucia = new Lucia(adapter, {
 // IMPORTANT!
 declare module "lucia" {
     interface Register {
+      Lucia: typeof lucia;
       DatabaseUserAttributes: {
         username: string; // example of an additional optional attribute
       },
