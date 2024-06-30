@@ -25,12 +25,8 @@
     "bun": "^1.1.17"
   },
   "peerDependencies": {
-    "surrealdb.js": "npm:surrealdb.js@^1.0.0-beta.9",
+    "surrealdb.js": "^1.0.0-beta.9",
     "typescript": "^5.5.2",
-    "lucia": "npm:lucia@~3.2.0"
-  },
-  "engines": {
-		"node": "20.x",
-		"pnpm": "*"
-	}
+    "lucia": "~3.2.0"
+  }
 }
