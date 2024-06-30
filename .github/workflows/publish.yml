@@ -13,6 +13,8 @@ jobs:
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
+      - name: Run unit tests
+        run: bun test
 
   publish:
     name: Publish to jsr.io
