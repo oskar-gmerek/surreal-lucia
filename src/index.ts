@@ -1,8 +1,6 @@
 import type { Adapter, DatabaseSession, DatabaseUser, UserId } from "lucia";
-import { RecordId, Table } from "npm:surrealdb.js";
-// import type { Surreal } from "npm:surrealdb.js@^1.0.0-beta.9";
-// import type { Surreal } from "surrealdb";
-import type { Surreal } from "npm:surrealdb.js";
+import { RecordId, Table } from "npm:surrealdb.js@^1.0.0-beta.9";
+import type { Surreal } from "npm:surrealdb.js@^1.0.0-beta.9";
 import type { DatabaseTables, SurrealSession } from "../src/types.ts";
 import {
   mapToLuciaDatabaseSession,

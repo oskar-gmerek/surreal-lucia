@@ -3,7 +3,7 @@
     // import maps
     "baseUrl": "./",
     "paths": {
-      "npm:surrealdb.js": ["./node_modules/surrealdb.js/types/index.d.ts"]
+      "npm:surrealdb.js@*": ["./node_modules/surrealdb.js/types/index.d.ts"]
     },
 
     // Enable latest features
