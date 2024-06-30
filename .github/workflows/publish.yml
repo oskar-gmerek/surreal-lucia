@@ -8,15 +8,24 @@ jobs:
   test:
     name: Run tests
     runs-on: ubuntu-latest
+    strategy:
+        matrix:
+          surrealdb: ["v1.5.3", "v2.0.0-alpha.3"]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Install SurrealDB ${{ matrix.surrealdb }}
+        run: curl --proto '=https' --tlsv1.2 -sSf https://install.surrealdb.com | sh -s -- --version ${{ matrix.surrealdb }}
+
       - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+        uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Install dependencies
         run: bun install
+
       - name: Bun test
         run: bun test
 
