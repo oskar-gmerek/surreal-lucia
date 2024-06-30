@@ -1,4 +1,4 @@
-import type { RegisteredDatabaseSessionAttributes, RegisteredDatabaseUserAttributes } from "lucia";
+import type { RegisteredDatabaseSessionAttributes, RegisteredDatabaseUserAttributes } from "npm:lucia@~3.2.0";
 import type { RecordId } from "npm:surrealdb.js@^1.0.0-beta.9";
 
 /**

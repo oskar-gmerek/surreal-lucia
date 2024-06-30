@@ -1,4 +1,4 @@
-import type { Adapter, DatabaseSession, DatabaseUser, UserId } from "lucia";
+import type { Adapter, DatabaseSession, DatabaseUser, UserId } from "npm:lucia@~3.2.0";
 import { RecordId, Table } from "npm:surrealdb.js@^1.0.0-beta.9";
 import type { Surreal } from "npm:surrealdb.js@^1.0.0-beta.9";
 import type { DatabaseTables, SurrealSession } from "../src/types.ts";
