@@ -1,12 +1,18 @@
-import type { Adapter, DatabaseSession, DatabaseUser, UserId } from "npm:lucia@3.2.0";
-import { RecordId, Table } from "npm:surrealdb.js@1.0.0-beta.9";
-import type { Surreal } from "npm:surrealdb.js@1.0.0-beta.9";
+import type { Adapter, DatabaseSession, DatabaseUser, UserId } from "lucia";
+import { RecordId, Table } from "surrealdb.js";
+// import type { Surreal } from "npm:surrealdb.js@^1.0.0-beta.9";
+import type { Surreal } from "surrealdb.js";
 import type { DatabaseTables, SurrealSession } from "../src/types.ts";
 import {
   mapToLuciaDatabaseSession,
   mapToLuciaDatabaseUser,
 } from "./helpers.ts";
 
+
+/**
+ * A class representing the Lucia adapter for interacting with a SurrealDB instance.
+ * This adapter provides methods for managing sessions and users in the database.
+ */
 export class SurrealDBLuciaAdapter implements Adapter {
   private db: Surreal;
   private sessionTableName;
