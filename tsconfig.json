@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
+    // import maps
+    "baseUrl": "./",
+    "paths": {
+      "surrealdb": ["./node_modules/surrealdb.js/types/index.d.ts"]
+    },
 
     // Enable latest features
     "lib": ["ESNext", "DOM"],
     "target": "ESNext",
     "module": "NodeNext",
-    "moduleDetection": "force",
+    // "moduleDetection": "force",
+    "moduleDetection": "auto",
     "allowJs": true,
 
     // Bundler mode
@@ -22,11 +28,12 @@
     // Some stricter flags
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noPropertyAccessFromIndexSignature": false,
+    "noPropertyAccessFromIndexSignature": true,
 
     // Others
     "declaration": true,
     "allowSyntheticDefaultImports": true
+
   },
   "exclude": ["node_modules/", "**/*.test.ts"]
 }
