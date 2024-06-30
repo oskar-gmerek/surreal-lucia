@@ -3,15 +3,14 @@
     // import maps
     "baseUrl": "./",
     "paths": {
-      "surrealdb": ["./node_modules/surrealdb.js/types/index.d.ts"]
+      "npm:surrealdb.js": ["./node_modules/surrealdb.js/types/index.d.ts"]
     },
 
     // Enable latest features
     "lib": ["ESNext", "DOM"],
     "target": "ESNext",
     "module": "NodeNext",
-    // "moduleDetection": "force",
-    "moduleDetection": "auto",
+    "moduleDetection": "force",
     "allowJs": true,
 
     // Bundler mode
