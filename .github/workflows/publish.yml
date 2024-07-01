@@ -14,6 +14,9 @@ jobs:
     steps:
       - name: Install SurrealDB ${{ matrix.surrealdb }}
         run: curl --proto '=https' --tlsv1.2 -sSf https://install.surrealdb.com | sh -s -- --version ${{ matrix.surrealdb }}
+        
+      - name: Run SurrealDB ${{ matrix.surrealdb }}
+        run: surreal start --user root --pass root memory
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
