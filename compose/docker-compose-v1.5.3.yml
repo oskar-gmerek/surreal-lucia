@@ -1,0 +1,22 @@
+services:
+  affileo_surrealdb:
+    container_name: surrealdb_test
+    restart: unless-stopped
+    env_file:
+      - .env
+    entrypoint:
+      - /surreal
+      - start
+      - --allow-guests
+      - --auth 
+      - --bind
+      - 0.0.0.0:8000
+      - --user
+      - root
+      - --pass
+      - root
+      - memory
+
+    image: surrealdb/surrealdb:v1.5.3
+    ports:
+      - 8000:8000

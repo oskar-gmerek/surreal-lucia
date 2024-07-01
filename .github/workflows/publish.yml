@@ -15,8 +15,8 @@ jobs:
       - name: Install SurrealDB ${{ matrix.surrealdb }}
         run: curl --proto '=https' --tlsv1.2 -sSf https://install.surrealdb.com | sh -s -- --version ${{ matrix.surrealdb }}
         
-      - name: Run SurrealDB ${{ matrix.surrealdb }}
-        run: surreal start --user root --pass root memory
+      - name: Start SurrealDB ${{ matrix.surrealdb }}
+        run: docker compose -f ./compose/docker-compose-${{ matrix.surrealdb }}.yml up -d
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -31,6 +31,9 @@ jobs:
 
       - name: Bun test
         run: bun test
+
+      - name: Stop SurrealDB ${{ matrix.surrealdb }}
+        run: docker compose -f ./compose/docker-compose-${{ matrix.surrealdb }}.yml up -d
 
   publish:
     name: Publish to jsr.io

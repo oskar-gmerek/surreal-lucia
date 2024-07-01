@@ -1,5 +1,10 @@
 {
     "name": "@oskargmerek/surreal-lucia",
     "version": "0.2.0",
-    "exports": "./src/index.ts"
+    "exports": "./src/index.ts",
+    "publish": {
+        "exclude": [
+            "./compose"
+        ]
+    }
 }
