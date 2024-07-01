@@ -1,9 +1,7 @@
 services:
-  affileo_surrealdb:
+  surrealdb:
     container_name: surrealdb_test
     restart: unless-stopped
-    env_file:
-      - .env
     entrypoint:
       - /surreal
       - start
