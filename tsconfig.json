@@ -3,8 +3,8 @@
     // import maps
     "baseUrl": "./",
     "paths": {
-      "npm:lucia@*": ["./node_modules/lucia/dist/index.d.ts"],
-      "npm:surrealdb.js@*": ["./node_modules/surrealdb.js/types/index.d.ts"]
+      "npm:lucia@*": ["./node_modules/lucia","./node_modules/lucia/dist/index.d.ts"],
+      "npm:surrealdb.js@*": ["./node_modules/surrealdb.js", "./node_modules/surrealdb.js/types/index.d.ts"]
     },
 
     // Enable latest features
