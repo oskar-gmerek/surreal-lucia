@@ -30,7 +30,7 @@ const {
 const db = new Surreal();
 
 try {
-  await db.connect(SURREALDB_TEST_URL),
+  await db.connect(SURREALDB_TEST_URL, {versionCheck: false}),
     await db.use({
       namespace: SURREALDB_TEST_NS,
       database: SURREALDB_TEST_DB,

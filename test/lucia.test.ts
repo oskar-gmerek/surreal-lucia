@@ -16,7 +16,7 @@ const {
 const db = new Surreal();
 
 try {
-    await db.connect(LUCIA_TEST_URL),
+    await db.connect(LUCIA_TEST_URL, {versionCheck: false}),
       await db.use({
         namespace: LUCIA_TEST_NS,
         database: LUCIA_TEST_DB,
