@@ -15,14 +15,14 @@ jobs:
       - name: Install SurrealDB ${{ matrix.surrealdb }}
         run: curl --proto '=https' --tlsv1.2 -sSf https://install.surrealdb.com | sh -s -- --version ${{ matrix.surrealdb }}
         
-      - name: Start SurrealDB ${{ matrix.surrealdb }}
-        run: docker compose -f compose/docker-compose-${{ matrix.surrealdb }}.yml up -d
-
       - name: Display directory contents
         run: ls -la ./
-
+  
       - name: Display compose directory contents
         run: ls -la compose/
+        
+      - name: Start SurrealDB ${{ matrix.surrealdb }}
+        run: docker compose -f compose/docker-compose-${{ matrix.surrealdb }}.yml up -d
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
