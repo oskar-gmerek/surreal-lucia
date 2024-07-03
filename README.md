@@ -18,10 +18,10 @@ This adapter seamlessly integrates SurrealDB with Lucia, providing a robust and 
 > [!NOTE]  
 > Package installation examples use bun as the package manager, but you can replace bun with npm, yarn, pnpm, or deno.
 
-- [SurrealDB](https://surrealdb.com) `^1.4.2`
-- [SurrealDB Javascript SDK](https://github.com/surrealdb/surrealdb.js) `^1.0.0-beta.9`
+- [SurrealDB](https://surrealdb.com) `^2.0.0-alpha.4`
+- [SurrealDB Javascript SDK](https://github.com/surrealdb/surrealdb.js) `^1.0.0-beta.12`
   ```bash
-  bun add surrealdb.js
+  bunx jsr add @surrealdb/surrealdb@^1.0.0-beta.12
   ```
 - [Lucia](https://lucia-auth.com) `~3.2.0`
   ```bash
