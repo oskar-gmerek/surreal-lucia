@@ -1,0 +1,6 @@
+[run]
+# equivalent to `bun --bun` for all `bun run` commands
+bun = true
+[install.scopes]
+# required for using @surrealdb/surrealdb from the jsr.io registry
+"@jsr" = "https://npm.jsr.io"
