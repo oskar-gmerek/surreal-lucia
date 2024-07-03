@@ -1,40 +1,40 @@
 {
-  "name": "@oskargmerek/surreal-lucia",
-  "author": {
-    "name": "Oskar Gmerek",
-    "url": "https://oskargmerek.com"
-  },
-  "module": "src/index.ts",
-  "devDependencies": {
-    "@biomejs/biome": "1.8.3",
-    "@lucia-auth/adapter-test": "^5.0.1",
-    "@types/bun": "latest",
-    "bun": "^1.1.17"
-  },
-  "peerDependencies": {
-    "typescript": "^5.5.2",
-    "lucia": "~3.2.0"
-  },
-  "description": "SurrealDB adapter for Lucia",
-  "keywords": [
-    "lucia",
-    "adapter",
-    "surrealdb",
-    "surreal",
-    "auth",
-    "surrealdb.js",
-    "surrealdb.ts",
-    "typescript",
-    "authentication",
-    "sessions"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "biome:check": "biome check . --write"
-  },
+	"name": "@oskargmerek/surreal-lucia",
+	"author": {
+		"name": "Oskar Gmerek",
+		"url": "https://oskargmerek.com"
+	},
+	"module": "src/index.ts",
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@lucia-auth/adapter-test": "^5.0.1",
+		"@types/bun": "latest",
+		"bun": "^1.1.17"
+	},
+	"dependencies": {
+		"@surrealdb/surrealdb": "npm:@jsr/surrealdb__surrealdb@^1.0.0-beta.12",
+		"lucia": "~3.2.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5.5.2"
+	},
+	"description": "SurrealDB adapter for Lucia",
+	"keywords": [
+		"lucia",
+		"adapter",
+		"surrealdb",
+		"surreal",
+		"auth",
+		"surrealdb.js",
+		"surrealdb.ts",
+		"typescript",
+		"authentication",
+		"sessions"
+	],
+	"license": "MIT",
+	"scripts": {
+		"biome:check": "biome check . --write"
+	},
   "trustedDependencies": ["@biomejs/biome", "bufferutil", "bun", "utf-8-validate"],
-  "type": "module",
-  "dependencies": {
-    "@surrealdb/surrealdb": "npm:@jsr/surrealdb__surrealdb@^1.0.0-beta.12"
-  }
+	"type": "module"
 }
